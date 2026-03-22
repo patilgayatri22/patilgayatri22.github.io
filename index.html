@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gayatri Patil | AI & Data Scientist</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+
+    <!-- Neural Network Animated Background -->
+    <canvas id="canvas-container"></canvas>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">Gayatri<span> </span>Patil</div>
+        
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#home" class="nav-link active" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#experience" class="nav-link" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" class="nav-link" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#skills" class="nav-link" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#education" class="nav-link" onclick="toggleMenu()">Education</a></li>
+                <li><a href="#awards" class="nav-link" onclick="toggleMenu()">Awards</a></li>
+            </ul>
+        </nav>
+        
+        <div class="social-header">
+            <a href="https://github.com/patilgayatri22" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gayatri-patil-3490b316a/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:patilgayatri2297@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero-wrapper">
+            <!-- Text Content -->
+            <div class="hero-content">
+                <div class="hero-greeting"># Hello World, I am</div>
+                <h1 class="hero-name">Gayatri Patil</h1>
+                <h2 class="hero-title">AI & Data Scientist</h2>
+                <div class="hero-typewrite">
+                    <span id="typewriter-text"></span><span class="cursor"></span>
+                </div>
+                <a href="#projects" class="btn-hero">View My Work <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Photo Card -->
+            <div class="hero-image-card">
+                <div class="image-inner-box">
+                    <!-- Ensure this path matches your file structure -->
+                    <img src="images/gp.jpg" loading="lazy" alt="Gayatri Patil">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="section-header">
+            <h2>Professional Experience</h2>
+        </div>
+        
+        <div class="grid-container">
+            <div class="glass-card">
+                <div class="card-header">
+                    <h3>
+                        Kushmanda.ai
+                        <a href="https://kushmanda.ai/" target="_blank" title="Company Website"><i class="fas fa-external-link-alt"></i></a>
+                    </h3>
+                    <div class="role">Product Data Science Intern</div>
+                    <div class="tech-tags">
+                        <span class="tag">GoLang</span> <span class="tag">Apache Druid</span> <span class="tag">React-Native</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Designed GoLang APIs for data onboarding, enabling ingestion of 3 structured/semi-structured sources.</li>
+                        <li>Integrated Apache Druid for real-time OLAP queries, improving latency by 25%.</li>
+                        <li>Built cross-source joins and React-Native visualization features for enhanced reporting.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <div class="card-header">
+                    <h3>
+                        Michelin
+                        <a href="https://www.michelin.com/en/" target="_blank" title="Company Website"><i class="fas fa-external-link-alt"></i></a>
+                    </h3>
+                    <div class="role">Developer Analyst</div>
+                    <div class="tech-tags">
+                        <span class="tag">Azure Data Lake</span> <span class="tag">ETL/ELT</span> <span class="tag">SQL</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Deployed 20 ETL/ELT pipelines facilitating data flow across 4 cross-functional teams.</li>
+                        <li>Managed Workday HCM ingestion into Azure Data Lake with 100% governance compliance.</li>
+                        <li>Automated 20+ reports, increasing adoption by 19% and optimized SQL performance.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <div class="card-header">
+                    <h3>
+                        LTI - Larsen & Toubro Infotech
+                        <a href="https://www.ltm.com/" target="_blank" title="Company Website"><i class="fas fa-external-link-alt"></i></a>
+                    </h3>
+                    <div class="role">Software Engineer</div>
+                    <div class="tech-tags">
+                        <span class="tag">Java</span> <span class="tag">REST APIs</span> <span class="tag">SonarLint</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Developed KYC automation software, reducing processing time from 7 days to 4 hours.</li>
+                        <li>Raised data accessibility by 25% by developing backend RESTful APIs.</li>
+                        <li>Reduced production bugs by 10% through SonarLint initiatives and code refactoring.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-header">
+            <h2>Featured Projects</h2>
+        </div>
+        
+        <div class="grid-container">
+            <div class="glass-card">
+                <div class="card-header">
+                    <h3>
+                        <i class="fas fa-network-wired" style="color:var(--primary); margin-right:10px;"></i>HelioSync
+                        <a href="https://github.com/patilgayatri22/DistributedSystem_Project" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
+                    </h3>
+                    <div class="role">Federated Learning MLOps</div>
+                    <div class="tech-tags">
+                        <span class="tag">Docker</span> <span class="tag">Flask</span> <span class="tag">TensorFlow</span> <span class="tag">PyTorch</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Architected a modular FL platform with Dockerized services for client orchestration and secure aggregation (FedAvg).</li>
+                        <li>Implemented orchestration layer with CI/CD & visualization ensuring fault-tolerant training across clients.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <div class="card-header">
+                    <h3>
+                        <i class="fas fa-tint" style="color:var(--primary); margin-right:10px;"></i>Beyond the Tap
+                        <a href="https://github.com/patilgayatri22/Machine_Learning" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
+                    </h3>
+                    <div class="role">Water Quality Monitoring</div>
+                    <div class="tech-tags">
+                        <span class="tag">LightGBM</span> <span class="tag">UMAP</span> <span class="tag">K-means</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Achieved >90% accuracy in classifying water quality for contamination detection using ML techniques.</li>
+                        <li>Applied feature engineering and dimensionality reduction for interpretable, reliable solutions.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <div class="card-header">
+                    <h3>
+                        <i class="fas fa-robot" style="color:var(--primary); margin-right:10px;"></i>Adaptive AI Agent
+                        <a href="https://github.com/patilgayatri22/AI_adaptive_browser" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
+                    </h3>
+                    <div class="role">Browser Automation Architecture</div>
+                    <div class="tech-tags">
+                        <span class="tag">React</span> <span class="tag">FastAPI</span> <span class="tag">LLM</span> <span class="tag">Playwright</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Designed a Browser Agent (ABA) to reduce latency/cost and overcome brittle action grounding in LLM agents.</li>
+                        <li>Integrated perception, memory, and sharing modules to turn successful interactions into reusable capabilities.</li>
+                        <li>Developed a multi-agent pipeline: User Query -> ProductSearch -> PriceComparison -> Recommendation.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <div class="card-header">
+                    <h3>
+                        <i class="fas fa-video" style="color:var(--primary); margin-right:10px;"></i>Pitch-Perfect
+                        <a href="https://github.com/patilgayatri22/pitch-perfect-AI" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
+                    </h3>
+                    <div class="role">Cricket Shot Analysis</div>
+                    <div class="tech-tags">
+                        <span class="tag">TensorFlow</span> <span class="tag">FastAPI</span> <span class="tag">React</span> <span class="tag">CV</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Built a full-stack app for real-time cricket shot classification and form quality assessment using Deep Learning.</li>
+                        <li>Implemented a multi-task model to classify shots (drive, pull) and assess form quality with confidence scoring.</li>
+                        <li>Enabled real-time analysis supporting both live camera feeds and video file uploads.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <div class="card-header">
+                    <h3>
+                        <i class="fas fa-code-branch" style="color:var(--primary); margin-right:10px;"></i>GitSight
+                        <a href="https://github.com/patilgayatri22/git-sight" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
+                    </h3>
+                    <div class="role">GitHub BigData Analytics</div>
+                    <div class="tech-tags">
+                        <span class="tag">PySpark</span> <span class="tag">Snowflake</span> <span class="tag">Azure</span> <span class="tag">Power BI</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Engineered a distributed pipeline to process 54GB+ GitHub metadata, analyzing developer influence and trends.</li>
+                        <li>Structured raw activity data into Snowflake, creating Power BI reports to aid recruiters and product teams.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <div class="card-header">
+                    <h3>
+                        <i class="fas fa-cloud-sun" style="color:var(--primary); margin-right:10px;"></i>Weather Analytics
+                        <a href="https://github.com/patilgayatri22/DataWarehouse_FinalProject" target="_blank" title="View Code"><i class="fab fa-github"></i></a>
+                    </h3>
+                    <div class="role">Data Pipeline Orchestration</div>
+                    <div class="tech-tags">
+                        <span class="tag">Airflow</span> <span class="tag">Snowflake</span> <span class="tag">DBT</span> <span class="tag">Tableau</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Built a scalable ETL pipeline to ingest and process weather data for agriculture and urban planning insights.</li>
+                        <li>Orchestrated data flows using Apache Airflow and DBT, visualizing key metrics in Tableau.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-header">
+            <h2>Technical Arsenal</h2>
+        </div>
+        
+        <div class="grid-container" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+            <div class="skill-box">
+                <h3><i class="fas fa-code"></i> Languages</h3>
+                <div class="skill-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">R</span>
+                    <span class="tag">GoLang</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <h3><i class="fas fa-brain"></i> AI/ML</h3>
+                <div class="skill-tags">
+                    <span class="tag">GenAI</span>
+                    <span class="tag">RAG</span>
+                    <span class="tag">Computer Vision</span>
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">TensorFlow</span>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <h3><i class="fas fa-cloud"></i> Tools & Cloud</h3>
+                <div class="skill-tags">
+                    <span class="tag">AWS</span>
+                    <span class="tag">Azure</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Airflow</span>
+                    <span class="tag">Snowflake</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="section-header">
+            <h2>Education</h2>
+        </div>
+        
+        <div class="edu-grid">
+            <div class="edu-card">
+                <h3><i class="fas fa-graduation-cap"></i> San José State University</h3>
+                <div class="degree">M.S. Applied Data Science</div>
+                <p style="margin-top:10px; color:#888;">Aug 2024 – May 2026 | California, USA</p>
+            </div>
+            
+            <div class="edu-card">
+                <h3><i class="fas fa-graduation-cap"></i> Savitribai Phule Pune University</h3>
+                <div class="degree">B.E. Computer Engineering</div>
+                <p style="margin-top:10px; color:#888;">July 2015 – June 2019 | Pune, India</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards">
+        <div class="section-header">
+            <h2>Awards & Recognitions</h2>
+        </div>
+        
+        <div class="edu-grid">
+            <div class="edu-card">
+                <h3><i class="fas fa-award"></i> Go-Getter Award</h3>
+                <p style="margin-top:10px; color:#888;">Awarded by Michelin, 2023</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/gayatri-patil-3490b316a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/patilgayatri22" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:patilgayatri2297@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>Designed & Built by Gayatri Patil</p>
+        <p style="font-size: 0.8rem; margin-top: 10px;">Cupertino, CA</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
+</body>
+</html>
